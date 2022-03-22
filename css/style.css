@@ -1,5 +1,6 @@
 :root {
     --main-color: #d3ad7f;
+    --second-color: #fff;
     --black: #13131a;
     --bg: #010103;
     --border: .1rem solid rgba(255, 255, 255, 3);
@@ -29,7 +30,7 @@ html::-webkit-scrollbar-track {
 }
 
 html::-webkit-scrollbar-thumb {
-    background: #fff;
+    background: var(--second-color);
     border-radius: 5rem;
 }
 
@@ -41,7 +42,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 1.5rem;
+    padding: 1.8rem;
     border-bottom: var(--border);
     position: fixed;
     left: 0;
@@ -52,14 +53,15 @@ body {
 
 .logo-img {
     border-radius: 50%;
-    height: 20rem;
-    width: 20rem;
+    height: 12rem;
+    width: 14rem;
 }
 
 .navbar a {
     margin: 0 1rem;
+    padding: 1rem;
     font-size: 1.6rem;
-    color: #fff;
+    color: var(--second-color);
     text-decoration: none;
 }
 
@@ -74,7 +76,6 @@ body {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    margin-right: 3rem;
 }
 
 .icon {
@@ -85,5 +86,73 @@ body {
 }
 
 .icon:hover {
+    color: var(--main-color);
+}
+
+.menu-icon {
+    display: none;
+}
+
+.search-form {
+    position: absolute;
+    top: 115%;
+    right: 7%;
+    background-color: var(--second-color);
+    width: 50rem;
+    height: 5rem;
+    display: flex;
+    align-items: center;
+    transform: scaleY(0);
+    transform-origin: top;
+}
+
+.search-input {
+    width: 100%;
+    height: 100%;
+    font-size: 1.6rem;
+    padding: 1rem;
+    outline: none;
+    border: none;
+    text-transform: none;
+}
+
+.cart-items-container {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    height: calc(100vh - 9.5rem);
+    width: 35rem;
+    background: var(--second-color);
+    padding: 0 1.5rem;
+}
+
+.cart-item {
+    position: relative;
+    margin: 2rem 0;
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.exit-icon {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    width: 2rem;
+    height: 2rem;
+    cursor: pointer;
+}
+
+.cart-item-img {
+    height: 8rem;
+    width: 8rem;
+}
+
+.cart-item h3 {
+    font-size: 2rem;
+}
+
+.price {
+    font-size:  1.5rem;
     color: var(--main-color);
 }
