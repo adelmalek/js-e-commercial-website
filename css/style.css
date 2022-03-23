@@ -42,6 +42,10 @@ body {
     background: var(--bg);
 }
 
+section {
+    padding: 2rem 7%;
+}
+
 
 /*****
 HEADER
@@ -58,6 +62,7 @@ HEADER
     top: 0;
     right: 0;
     z-index: 999;
+    background-color: var(--bg);
 }
 
 .logo-img {
@@ -182,6 +187,56 @@ HEADER
 }
 
 
+/***********
+HOME SECTION
+***********/
+
+.home {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/homebg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.home-content {
+    max-width: 60rem;
+}
+
+.home-content h3 {
+    font-size: 4rem;
+    text-transform: uppercase;
+    color: var(--second-color);
+}
+
+.home-content p {
+    font-size: 2rem;
+    font-weight: 400;
+    line-height: 2.5rem;
+    padding: 1rem 0;
+    color: var(--main-color);
+}
+
+.home-btn {
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 1rem 3rem;
+    background-color: var(--main-color);
+    color: var(--second-color);
+    cursor: pointer;
+    font-size: 1.7rem;
+    text-decoration: none;
+    text-align: center;
+    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.6);
+}
+
+.home-btn:hover {
+    background: #a0835f;
+}
+
+
 /************
 MEDIA QUERIES
 ************/
@@ -220,6 +275,20 @@ MEDIA QUERIES
         width: 90%;
         right: 2rem;
     }
+
+    .home {
+        justify-content: center;
+        text-align: center;
+    }
+
+    .home-content h3 {
+        font-size: 3rem;
+    }
+
+    .home-content p {
+        font-size: 1.5rem;
+    }
+    
 }
 
 @media screen and (max-width: 450px) {
