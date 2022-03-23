@@ -1,3 +1,7 @@
+/******
+GENERAL
+******/
+
 :root {
     --main-color: #d3ad7f;
     --second-color: #fff;
@@ -38,6 +42,11 @@ body {
     background: var(--bg);
 }
 
+
+/*****
+HEADER
+*****/
+
 .header {
     display: flex;
     align-items: center;
@@ -59,7 +68,6 @@ body {
 
 .navbar a {
     margin: 0 1rem;
-    padding: 1rem;
     font-size: 1.6rem;
     color: var(--second-color);
     text-decoration: none;
@@ -68,7 +76,6 @@ body {
 .navbar a:hover {
     color: var(--main-color);
     border-bottom: .1rem solid var(--main-color);
-    padding-bottom: .5rem;
 }
 
 .icons {
@@ -119,7 +126,7 @@ body {
 .cart-items-container {
     position: absolute;
     top: 100%;
-    right: 0;
+    right: -100%;
     height: calc(100vh - 9.5rem);
     width: 35rem;
     background: var(--second-color);
@@ -155,4 +162,79 @@ body {
 .price {
     font-size:  1.5rem;
     color: var(--main-color);
+}
+
+.payment-btn {
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 1rem 3rem;
+    background-color: var(--main-color);
+    color: var(--second-color);
+    cursor: pointer;
+    font-size: 1.7rem;
+    text-decoration: none;
+    width: 100%;
+    text-align: center;
+}
+
+.payment-btn:hover {
+    background: #a0835f;
+}
+
+
+/************
+MEDIA QUERIES
+************/
+@media screen and (max-width: 991px) {
+
+}
+
+@media screen and (max-width: 781px) {
+    .header {
+        padding: 1.5rem 2rem;
+    }
+
+    .menu-icon {
+        display: inline-block;
+    }
+
+    .navbar {
+        position: absolute;
+        top: 100%;
+        right: -100%;
+        background-color: var(--second-color);
+        width: 30rem;
+        height: calc(100vh - 9.5rem);
+    }
+
+    .navbar a {
+        display: block;
+        margin: 1.5rem;
+        padding: .7rem;
+        color: var(--bg);
+        font-size: 2rem;
+        border-bottom: 1px solid var(--main-color);
+    }
+
+    .search-form {
+        width: 90%;
+        right: 2rem;
+    }
+}
+
+@media screen and (max-width: 450px) {
+
+}
+
+/********************
+JAVASCRIPT CLASSLLIST
+********************/
+
+.active {
+    right: 0;
+    transition: ease .6s;
+}
+
+.search-input-scale {
+    transform: scaleY(1);
 }
