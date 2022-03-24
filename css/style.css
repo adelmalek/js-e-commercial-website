@@ -309,6 +309,67 @@ ABOUT SECTION
 }
 
 
+/************
+BOX CONTAINER
+************/
+
+.menu-box-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap: 1.5rem;
+    margin-top: 5rem;
+}
+
+.box {
+    padding: 5rem;
+    text-align: center;
+    border: var(--border);
+}
+
+.box:hover {
+    background-color: var(--second-color);
+}
+
+.box:hover > * {
+    color: var(--bg);
+}
+
+.box img {
+    height: 16rem;
+}
+
+.box h3 {
+    color: var(--second-color);
+    font-size: 2rem;
+    padding: 1rem 0;
+}
+
+
+.price {
+    color: var(--second-color);
+    font-size: 2rem;
+    padding: .5rem 0;
+}
+
+.price span {
+    color: var(--second-color);
+    font-size: 1.5rem;
+    text-decoration: line-through;
+    margin-left: 0.5rem;
+}
+
+.menu-btn {
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 1rem 3rem;
+    background-color: var(--main-color);
+    color: var(--second-color);
+    cursor: pointer;
+    font-size: 1.7rem;
+    text-decoration: none;
+    text-align: center;
+    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.6);
+}
 
 /************
 MEDIA QUERIES
