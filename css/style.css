@@ -309,9 +309,26 @@ ABOUT SECTION
 }
 
 
-/************
-BOX CONTAINER
-************/
+/***********
+MENU SECTION
+***********/
+
+.menu-heading {
+    text-align: center;
+    color: var(--second-color);
+    text-transform: uppercase;
+    margin-top: 5rem;
+    padding-bottom: 3.5rem;
+    font-size: 4rem;
+}
+
+.menu-heading span {
+    text-align: center;
+    color: var(--main-color);
+    text-transform: uppercase;
+    padding-bottom: 3.5rem;
+    font-size: 4rem;
+}
 
 .menu-box-container {
     display: grid;
@@ -344,7 +361,6 @@ BOX CONTAINER
     padding: 1rem 0;
 }
 
-
 .price {
     color: var(--second-color);
     font-size: 2rem;
@@ -370,6 +386,76 @@ BOX CONTAINER
     text-align: center;
     text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.6);
 }
+
+
+/***************
+PRODUCTS SECTION
+***************/
+
+.products-heading {
+    text-align: center;
+    color: var(--second-color);
+    text-transform: uppercase;
+    margin-top: 5rem;
+    padding-bottom: 3.5rem;
+    font-size: 4rem;
+}
+
+.products-heading span {
+    text-align: center;
+    color: var(--main-color);
+    text-transform: uppercase;
+    padding-bottom: 3.5rem;
+    font-size: 4rem;
+}
+
+.products-box-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap: 1.5rem;
+    margin-top: 5rem;
+}
+
+.products-box {
+    text-align: center;
+    border: var(--border);
+    padding: 2rem;
+}
+
+.products-icons img {
+    width: 3rem;
+    height: 3rem;
+    border: var(--border);
+    margin: .3rem;
+    padding: .5rem;
+    cursor: pointer;
+}
+
+.products-icons img:hover {
+    background: var(--main-color);
+}
+
+.products-image {
+    padding: 2.5rem 0;
+}
+
+.products-image img {
+    height: 25rem;
+}
+
+.products-content h3{
+    color: var(--second-color);
+    font-size: 2.5rem;
+}
+
+.stars {
+    padding: 1.5rem;
+}
+
+.stars img {
+    width: 1.7rem;
+}
+
 
 /************
 MEDIA QUERIES
