@@ -517,6 +517,102 @@ REVIEW SECTION
 }
 
 
+/**************
+CONTACT SECTION
+**************/
+
+.contact-heading {
+    text-align: center;
+    color: var(--second-color);
+    text-transform: uppercase;
+    margin: 5rem 0;
+    padding-bottom: 3.5rem;
+    font-size: 4rem;
+}
+
+.contact-heading span {
+    text-align: center;
+    color: var(--main-color);
+    text-transform: uppercase;
+    padding-bottom: 3.5rem;
+    font-size: 4rem;
+}
+
+.contact-row {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+    background-color: var(--black);
+}
+
+.contact-map {
+    flex:1 1 45rem;
+    width: 100%;
+    object-fit: cover;
+}
+
+.contact-form {
+    flex:1 1 45rem;
+    padding: 5rem 2rem;
+    text-align: center;
+}
+
+.contact-form h3 {
+    text-transform: uppercase;
+    font-size: 3.5rem;
+    color: var(--second-color);
+}
+
+.input-box {
+    display: flex;
+    align-items: center;
+    margin: 2rem 0;
+    border: var(--border);
+    background-color: var(--bg);
+}
+
+.input-box img {
+    width: 2rem;
+    height: 3rem;
+    margin: 0 2rem;
+}
+
+.input-box input {
+    width: 100%;
+    padding: 2rem;
+    font-size: 1.7rem;
+    color: var(--second-color);
+    background: none;
+    outline: none;
+    border: none;
+}
+
+.contact-btn {
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 1rem 3rem;
+    background-color: var(--main-color);
+    color: var(--second-color);
+    cursor: pointer;
+    border: none;
+    font-size: 1.7rem;
+    text-decoration: none;
+    text-align: center;
+    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.6);
+}
+
+.contact-btn:hover {
+    background: #a0835f;
+}
+
+.submitted {
+    color: var(--main-color);
+    font-size: 1.5rem;
+}
+
+
+
 /************
 MEDIA QUERIES
 ************/
@@ -576,7 +672,7 @@ MEDIA QUERIES
 }
 
 /********************
-JAVASCRIPT CLASSLLIST
+JAVASCRIPT CLASSLIST
 ********************/
 
 .active {
