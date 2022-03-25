@@ -30,3 +30,20 @@ window.onscroll = () => {
     cartItemsContainer.classList.remove("active");
     searchForm.classList.remove("search-input-scale");
 };
+
+
+let form = document.querySelector("#form");
+let submittedDiv = document.querySelector("#submitted");
+
+form.addEventListener("submit", (e) => {
+    e.preventDefault();
+    form.reset();
+
+    submittedDiv.innerHTML = "Your information has been submitted.";
+   
+    const clearSubmittedDiv = () => {
+        submittedDiv.innerHTML = "";
+    };
+
+    setTimeout(clearSubmittedDiv, 2000);
+});
