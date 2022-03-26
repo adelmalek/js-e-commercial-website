@@ -710,16 +710,64 @@ BLOGS SECTION
 }
 
 
+/*****
+FOOTER
+*****/
 
+.footer {
+    background-color: var(--black);
+    text-align: center;
+    margin-top: 5rem;
+}
 
+.footer-logos {
+    padding: 3rem 0;
+}
+
+.footer-logos img {
+    height: 5rem;
+    width: 5rem;
+    line-height: 5rem;
+    padding: 0 1rem;
+    cursor: pointer;
+}
+
+.footer-links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+    padding: 2rem 0;
+}
+
+.footer-links a {
+    color: var(--second-color);
+    font-size: 1.8rem;
+    font-weight: 300;
+    text-decoration: none;
+    cursor: pointer;
+    padding: 0 1rem;
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
+}
+
+.footer-copy {
+    font-size: 1.4rem;
+    color: var(--second-color);
+    padding: 2rem;
+}
+
+.footer-copy span {
+    color: var(--main-color);
+    font-size: 1.4rem;
+}
 
 
 /************
-MEDIA QUERIES
+MEDIA QUERY
 ************/
-@media screen and (max-width: 991px) {
-
-}
 
 @media screen and (max-width: 781px) {
     .header {
@@ -768,9 +816,6 @@ MEDIA QUERIES
     
 }
 
-@media screen and (max-width: 450px) {
-
-}
 
 /********************
 JAVASCRIPT CLASSLIST
